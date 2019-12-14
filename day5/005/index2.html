@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h1, h2, div, p, section {
+         background-color: red;
+        }
+        a, span{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <pre>
+         display: block; ( 1 khối )
+       display: inline; ( 1 hàng )
+
+        thẻ block điển hình : div , p , h1 , h2 , section ...
+        thẻ inline điển hình : a , span
+
+        Có khoảng 80 thẻ html và các thẻ html này chia thành 2 nhóm block và inline
+        có 1 cách nhớ 3 thẻ inline điển hình : a, span , img
+
+        phân biệt đặc điểm của block :
+        - thẻ block luôn chiếm tất cả độ rộng sẵn có của thẻ cha dù nội dung nhỏ hơn
+        - thẻ block luôn xuất hiện trên 1 hàng mới
+        đặc điểm của inline
+        - thẻ inline chỉ chiếm độ rộng tương ứng với nội dung bên trong nó
+        - thẻ inline sẽ nằm trên 1 hàng cùng nhau và chỉ xuống hàng khi mà không còn đủ chiều rộng
+    </pre>
+
+    <h1>Thẻ h1</h1>
+    <h2>thẻ h2</h2>
+    <div>thẻ div</div>
+    <p>thẻ p</p>
+    <section>thẻ section</section>
+
+    <a href="#"> thẻ a1 </a>
+    <a href="#"> thẻ a2 </a>
+    <a href="#"> thẻ a3 </a>
+    <span> thẻ span1 </span>
+    <span> thẻ span2 </span>
+    <span> thẻ span3 </span>
+    <span> thẻ span4 </span>
+    <div class="container" style="background-color:  violet; width: 300px">
+        <div class="child1" style="background-color: red">thẻ div1 </div>
+        <div class="child2" style="background-color: red">thẻ div2 </div>
+    </div>
+
+</body>
+</html>
