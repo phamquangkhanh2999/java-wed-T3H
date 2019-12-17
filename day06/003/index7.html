@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            background-color: #ae7e35;
+            width: 640px;
+            margin: 0 auto;
+        }
+        .container .col1{
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            float: right;
+        }
+        .container .col2{
+            background-color: red;
+            width: 400px;
+            height: 200px;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="col1"> cột 1</div>
+        <div class="col2"> cột 2</div>
+    </div>
+    <pre>
+          Kết luận :
+        clear: left chỉ chống được float: left
+        clear: right chỉ chống được float: right
+        clear: both sẽ chống float theo cả hướng trái và phải
+
+    </pre>
+</body>
+</html>
