@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        #box1{
+            width: 150px;
+            height: 150px;
+            background: #ae7e35;
+            text-align: center;
+            margin-bottom: 20px;
+            border-radius: 20px;
+        }
+        #box2{
+            width: 150px;
+            height: 150px;
+            background: #ff668d;
+            text-align: center;
+            margin-bottom: 20px;
+            border-radius: 20px 30px 50px 3px;
+        }
+        #box3{
+            width: 50px;
+            height: 50px;
+            background: #ae7e35;
+            text-align: center;
+            margin-bottom: 20px;
+            border-radius: 50px;
+        }
+    </style>
+</head>
+<body>
+    <pre>
+        Kỹ thuật bo tròn góc trong css
+        border-radius
+        Bo tròn 4 góc bằng nhau
+        border-radius: 20px;
+        Bo tròn 4 góc khác nhau
+        border-radius: X1 X2 X3 X4;
+        X1 là bo tròn góc trên cùng tay trái
+        X2 là bo tròn góc trên cùng tay phải
+        X3 là bo tròn góc dưới cùng tay phải
+        X4 là bo tròn góc dưới cùng tay trái
+        ví dụ
+        border-radius: 20px 30px 40px 5px;
+    </pre>
+    <div id="box1"> box 1</div>
+    <div id="box2"> box 2</div>
+    <div id="box3"> box 3</div>
+</body>
+</html>

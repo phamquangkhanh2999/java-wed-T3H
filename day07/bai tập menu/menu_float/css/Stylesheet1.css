@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.site-wapper{
+    width: 1000px;
+    margin: 0 auto;
+}
+header .header-inner{
+    background: cadetblue;
+    font-size: 32px;
+    text-align: center;
+    padding: 30px 0;
+}
+header .main-navigation .mani-menu{
+    list-style: none;
+    background: coral;
+    padding: 0;
+    margin: 0;
+}
+header .main-navigation .mani-menu li{
+    background: aqua;
+    float: left;
+}
+header .main-navigation .mani-menu li a{
+    color: #ae7e35;
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    padding: 15px 20px;
+}
+header .main-navigation .mani-menu li a:hover{
+    background: #ff668d;
+}
