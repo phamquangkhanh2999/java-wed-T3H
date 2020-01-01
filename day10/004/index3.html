@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <pre>
+        bộ chọn trong js
+        bộc css các làm quen vói bộ chọn selector cho css gồm sẽ là #id
+        class là .class
+
+        js cũng có bộ chọn selector của riệng nó
+    </pre>
+    <div id="div1">thẻ div có id là div 1</div>
+    <div id="div2">thẻ div có id là div 1</div>
+    <script type="text/javascript">
+        /* .innerText chỉ thay đổi nội dung bằng văn bản */
+        document.getElementById("div1").innerText ="Tôi thay đổi nội dung văn " + "bản của 1 thẻ HTMl với id div 1";
+        /*.innerHTML thay đổi đc cả nội dung có chứa thẻ html*/
+        document.getElementById("div2").innerHTML ="<a href='zing.vn' > link đến trong zing </a>";
+    </script>
+</body>
+</html>
