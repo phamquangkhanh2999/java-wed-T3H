@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function tinh_tien_nuoc(so_nuoc_tieu_thu=0,gia_muc_1=5000,gia_muc_2=8000,gia_muc_3=18000,gia_muc_4=23000,han_muc_1=10,han_muc_2=10,
+        han_muc_3=30,tien_nuoc_thai=2000,tien_thue=0.1,so_tien_tt_A,so_tien_tt_B,so_tien_tt_C,so_tien_tt_D) {
+            //Người A
+            var so_met_khoi_chua_tieu_thu=so_nuoc_tieu_thu;
+            tien_nuoc_thai1=so_nuoc_tieu_thu*tien_nuoc_thai;
+            if(so_nuoc_tieu_thu>han_muc_1){
+                so_tien_tt_A=gia_muc_1*han_muc_1;
+                so_nuoc_tieu_thu=so_nuoc_tieu_thu-han_muc_1;
+            }
+            else{
+                so_tien_tt_A=so_nuoc_tieu_thu*gia_muc_1;
+                so_nuoc_tieu_thu=0;
+            }
+            //nguoi B
+            if (so_nuoc_tieu_thu>han_muc_2)
+            {
+                so_tien_tt_B=gia_muc_2*han_muc_2;
+                so_nuoc_tieu_thu=so_nuoc_tieu_thu-han_muc_2;
+            }
+            else{
+                so_tien_tt_B=so_nuoc_tieu_thu*han_muc_2;
+                so_nuoc_tieu_thu=0;
+
+            }
+            var tien_nuoc_tong=so_tien_tt_A+so_tien_tt_B;
+            var tien_truoc_thue=tien_nuoc_tong+tien_nuoc_thai1;
+            var gtgt=tien_truoc_thue*tien_thue;
+            var tien_thanh_thuc_te=gtgt+tien_truoc_thue;
+            return tien_thanh_thuc_te;
+        }
+
+        console.log("số tiền Thanh toán cuối cùng:" +tinh_tien_nuoc(2));
+        console.log("số tiền Thanh toán cuối cùng:" +tinh_tien_nuoc(14));
+
+
+    </script>
+</body>
+</html>
